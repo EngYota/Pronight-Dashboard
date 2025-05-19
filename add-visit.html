@@ -1,0 +1,545 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<!-- [Head] start -->
+
+<head>
+  <title> Pronight | برونايت </title>
+  <!-- [Meta] -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description"
+    content="">
+  <meta name="author" content="Pronight">
+
+  <!-- [Favicon] icon -->
+  <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+  <!-- [Page specific CSS] start -->
+  <link rel="stylesheet" href="assets/css/plugins/datepicker-bs5.min.css">
+  <link rel="stylesheet" href="assets/css/plugins/uppy.min.css">
+  <!-- [Page specific CSS] end -->
+
+
+  <link rel="stylesheet" href="assets/fonts/fontawesome.css">
+
+  <!-- [Template CSS Files] -->
+  <link rel="stylesheet" href="assets/css/style.css" id="main-style-link">
+  <link rel="stylesheet" href="assets/css/style-preset.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<!-- [Head] end -->
+<!-- [Body] Start -->
+
+<body data-pc-preset="preset-1" data-pc-sidebar-theme="light" data-pc-sidebar-caption="true" data-pc-direction="rtl"
+  data-pc-theme="light">
+  <!-- [ Pre-loader ] start -->
+  <div class="loader-bg">
+    <div class="loader-track">
+      <div class="loader-fill"></div>
+    </div>
+  </div>
+  <!-- [ Pre-loader ] End -->
+  <!-- [ Sidebar Menu ] start -->
+  <nav class="pc-sidebar">
+    <div class="navbar-wrapper">
+      <div class="m-header">
+        <a href="index.html" class="b-brand text-primary">
+          <!-- ========   Change your logo from here   ============ -->
+          <img src="assets/images/logo.png" alt="logo Pronight image" class="logo-lg">
+        </a>
+      </div>
+      <div class="navbar-content">
+        <ul class="pc-navbar">
+          <li class="pc-item">
+            <a href="index.html" class="pc-link">
+              <span class="pc-micon">
+                <i class="ph-duotone ph-house"></i>
+              </span>
+              <span class="pc-mtext">الرئيسية</span>
+            </a>
+          </li>
+          <li class="pc-item">
+            <a href="Contracts.html" class="pc-link active">
+              <span class="pc-micon">
+                <i class="ph-duotone ph-file-text"></i>
+              </span>
+              <span class="pc-mtext">العقود</span>
+            </a>
+          </li>
+          <li class="pc-item">
+            <a href="visits.html" class="pc-link">
+              <span class="pc-micon">
+                <i class="ph-duotone ph-identification-card"></i>
+              </span>
+              <span class="pc-mtext">تصاريح الزيارة</span>
+            </a>
+          </li>
+          <li class="pc-item">
+            <a href="units.html" class="pc-link">
+              <span class="pc-micon">
+                <i class="ph-duotone ph-buildings"></i>
+              </span>
+              <span class="pc-mtext">الوحدات</span>
+            </a>
+          </li>
+          <li class="pc-item">
+            <a href="reservation.html" class="pc-link">
+              <span class="pc-micon">
+                <i class="ph-duotone ph-calendar-check"></i>
+              </span>
+              <span class="pc-mtext">الحجوزات</span></a>
+          </li>
+          <li class="pc-item">
+            <a href="units-reservation.html" class="pc-link" target="_blank"><span class="pc-micon">
+              <i class="ph-duotone ph-ticket"></i></span>
+              <span class="pc-mtext">الحجز الخارجي</span>
+            </a>
+          </li>
+          <li class="pc-item">
+            <a href="units-special-prices.html" class="pc-link">
+              <span class="pc-micon"> <i class="ph-duotone ph-tag"></i>
+              </span><span
+                class="pc-mtext">أسعار الوحدات الخاصة</span></a>
+          </li>
+        </ul>
+      </div>
+      <!-- <div class="card pc-user-card">
+        <div class="card-body">
+          <div class="d-flex align-items-center">
+            <div class="flex-shrink-0">
+              <img src="assets/images/user/avatar-1.jpg" alt="user-image" class="user-avtar wid-45 rounded-circle">
+            </div>
+            <div class="flex-grow-1 ms-3 me-2">
+              <h6 class="mb-0">Jonh Smith</h6>
+              <small>Administrator</small>
+            </div>
+            <div class="dropdown">
+              <a href="#" class="btn btn-icon btn-link-secondary avtar arrow-none dropdown-toggle"
+                data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,20">
+                <i class="ph-duotone ph-windows-logo"></i>
+              </a>
+              <div class="dropdown-menu">
+                <ul>
+                  <li><a class="pc-user-links">
+                      <i class="ph-duotone ph-user"></i>
+                      <span>My Account</span>
+                    </a></li>
+                  <li><a class="pc-user-links">
+                      <i class="ph-duotone ph-gear"></i>
+                      <span>Settings</span>
+                    </a></li>
+                  <li><a class="pc-user-links">
+                      <i class="ph-duotone ph-lock-key"></i>
+                      <span>Lock Screen</span>
+                    </a></li>
+                  <li><a class="pc-user-links">
+                      <i class="ph-duotone ph-power"></i>
+                      <span>Logout</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </nav>
+  <!-- [ Sidebar Menu ] end -->
+  <!-- [ Header Topbar ] start -->
+  <header class="pc-header">
+    <div class="header-wrapper"> <!-- [Mobile Media Block] start -->
+      <!-- [Mobile Media Block end] -->
+      <div class="ms-auto">
+        <ul class="list-unstyled">
+          <li class="dropdown pc-h-item header-user-profile">
+            <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button"
+              aria-haspopup="false" data-bs-auto-close="outside" aria-expanded="false">
+              <img src="assets/images/user/avatar-2.jpg" alt="user-image" class="user-avtar">
+            </a>
+            <div class="dropdown-menu dropdown-user-profile dropdown-menu-end pc-h-dropdown">
+              <div class="dropdown-header d-flex align-items-center justify-content-between">
+                <h5 class="m-0">الملف الشخصي</h5>
+              </div>
+              <div class="dropdown-body">
+                <div class="profile-notification-scroll position-relative" style="max-height: calc(100dvh - 225px)">
+                  <ul class="list-group list-group-flush w-100">
+                    <li class="list-group-item">
+                      <div class="d-flex align-items-center">
+                        <div class="flex-shrink-0">
+                          <img src="assets/images/user/avatar-2.jpg" alt="user-image" class="wid-50 rounded-circle">
+                        </div>
+                        <div class="flex-grow-1 mx-3">
+                          <h5 class="mb-0">محمد عبدالرحمن أحمد</h5>
+                          <a class="link-primary" href="mailto:carson.darrin@company.io">mohamedahmed@pronight.com</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="#" class="dropdown-item">
+                        <span class="d-flex align-items-center">
+                          <i class="ph-duotone ph-user-circle"></i>
+                          <span>تعديل الملف الشخصي</span>
+                        </span>
+                      </a>
+                      <a href="#" class="dropdown-item">
+                        <span class="d-flex align-items-center">
+                          <i class="ph-duotone ph-file-text"></i>
+                          <span>اتفاقية الاستخدام</span>
+                        </span>
+                      </a>
+                      <a href="#" class="dropdown-item">
+                        <span class="d-flex align-items-center">
+                          <i class="ph-duotone ph-power"></i>
+                          <span>تسجيل الخروج</span>
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- [ Header ] end -->
+
+    <!-- [ Main Content ] start -->
+    <div class="pc-container">
+      <div class="pc-content">
+        <!-- [ breadcrumb ] start -->
+        <div class="page-header">
+          <div class="page-block">
+            <div class="row align-items-center">
+              <div class="col-md-12">
+                <ul class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="units.html">تصاريح الزيارة</a></li>
+                  <li class="breadcrumb-item" aria-current="page">إضافة تصريح زيارة</li>
+                </ul>
+              </div>
+              <div class="col-md-12">
+                <div class="page-header-title">
+                  <h2 class="mb-0"> إضافة تصريح زيارة </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- [ breadcrumb ] end -->
+        <!-- [ Main Content ] start -->
+        <div class="row">
+          <div class="col-sm-12">
+            <div id="basicwizard" class="form-wizard row justify-content-center">
+            
+            <div class="col-12">
+              <div class="card">
+                <div class="card-body p-3">
+                  <ul class="nav nav-pills nav-justified">
+                    <li class="nav-item" data-target-form="#contactDetailForm">
+                      <a href="#contactDetail" data-bs-toggle="tab" data-toggle="tab" class="nav-link active">
+                        <i class="ph-duotone ph-note"></i>
+                        <span class="d-none d-sm-inline"> بيانات التصريح </span>
+                      </a>
+                    </li>
+                    <!-- end nav item -->
+                    <li class="nav-item" data-target-form="#jobDetailForm">
+                      <a href="#jobDetail" data-bs-toggle="tab" data-toggle="tab" class="nav-link icon-btn">
+                        <i class="ph-duotone ph-user"></i>
+                        <span class="d-none d-sm-inline"> تكملة بيانات التصريح </span>
+                      </a>
+                    </li>
+                    <!-- end nav item -->
+                    <li class="nav-item" data-target-form="#educationDetailForm">
+                      <a href="#educationDetail" data-bs-toggle="tab" data-toggle="tab" class="nav-link icon-btn">
+                        <i class="ph-duotone ph-user-list"></i>
+                        <span class="d-none d-sm-inline">بيانات الزوار</span>
+                      </a>
+                    </li>
+                    <!-- end nav item -->
+                    <li class="nav-item">
+                      <a href="#finish" data-bs-toggle="tab" data-toggle="tab" class="nav-link icon-btn">
+                        <i class="ph-duotone ph-toolbox"></i>
+                        <span class="d-none d-sm-inline"> بيانات المواد </span>
+                      </a>
+                    </li>
+                    <!-- end nav item -->
+                  </ul>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <div class="tab-content">
+                    <!-- START: Define your progress bar here -->
+                    <div id="bar" class="progress mb-3" style="height: 7px;">
+                      <div class="bar progress-bar progress-bar-striped progress-bar-animated bg-success"></div>
+                    </div>
+                    <!-- END: Define your progress bar here -->
+                    <!-- START: Define your tab pans here -->
+                    <div class="tab-pane show active" id="contactDetail">
+                      <form id="contactForm" method="post" action="#">
+                        <div class="">
+                          <h5 class="mb-2">البيانات الأساسية التي تخص تصاريح الزيارة</h5>
+                        </div>
+                        <div class="row mt-4">
+                          <div class="col">
+                            <div class="row">
+                              <div class="col-sm-6">
+                                <div class="mb-3">
+                                  <label class="form-label">تاريخ الزيارة</label>
+                                  <div class="input-group date">
+                                    <input type="text" class="form-control" placeholder="Select date" id="pc-datepicker-1">
+                                    <span class="input-group-text">
+                                      <i class="ph-duotone ph-calendar"></i>
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="mb-3 ">
+                                  <label class="form-label">اخترالقطاع</label>
+                                  <select class="form-select">
+                                    <option> اخترالقطاع</option>
+                                    <option> رقم 1</option>
+                                    <option> رقم 2 </option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="mb-3 ">
+                                  <label class="form-label">اخترالفيلا</label>
+                                  <select class="form-select">
+                                    <option>  اخترالقطاع أولا</option>
+                                    <option> رقم 1</option>
+                                    <option> رقم 2 </option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="mb-3 ">
+                                  <label class="form-label">اختر الشاطيء</label>
+                                  <select class="form-select">
+                                    <option> اخترالقطاع أولا</option>
+                                    <option> رقم 1</option>
+                                    <option> رقم 2 </option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <!-- end contact detail tab pane -->
+                    <div class="tab-pane" id="jobDetail">
+                      <form id="jobForm" method="post" action="#">
+                        <div class="">
+                          <h5 class="mb-2">البيانات الأساسية التي تخص تصاريح الزيارة</h5>
+                        </div>
+                        <div class="row mt-4">
+                          <div class="col-sm-6">
+                            <div class="mb-3">
+                              <label class="form-label"> عدد الأيام </label>
+                              <input type="text" class="form-control" placeholder="ادخل عدد الأيام">
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="mb-3">
+                              <label class="form-label"> حالة التصريح </label>
+                              <input type="text" class="form-control" placeholder=" حالة التصريح ">
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="mb-3">
+                              <label class="form-label"> اسم السائق </label>
+                              <input type="text" class="form-control" placeholder="اسم السائق">
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="mb-3">
+                              <label class="form-label"> ملاحظاتك</label>
+                              <textarea class="form-control" placeholder="أضف ملاحظاتك"></textarea>
+                            </div>
+                          </div>
+                          <!-- <div class="col-sm-12">
+                            <div class="form-check form-switch custom-switch-v1 mb-2">
+                              <input id="toggleBtn" type="checkbox" class="form-check-input input-primary">
+                              <label class="form-check-label" for="toggleBtn">يوجد عرض</label>
+                            </div>
+                            </div>
+                              <div id="inputGroup" class="row">
+                                <div class="col-sm-6">
+                                  <div class="mb-3">
+                                    <label class="form-label">تاريخ بدء العرض</label>
+                                    <div class="input-group date">
+                                      <input type="text" class="form-control" placeholder="Select date" id="pc-datepicker-1">
+                                      <span class="input-group-text">
+                                        <i class="ph-duotone ph-calendar"></i>
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-sm-6">
+                                  <div class="mb-3">
+                                    <label class="form-label">تاريخ انتهاءالعرض</label>
+                                    <div class="input-group date">
+                                      <input type="text" class="form-control" placeholder="Select date" id="pc-datepicker-2">
+                                      <span class="input-group-text">
+                                        <i class="ph-duotone ph-calendar"></i>
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-sm-6">
+                                  <div class="mb-3 ">
+                                    <label class="form-label">اختر نوع العرض</label>
+                                    <select class="form-select">
+                                      <option> اختر نوع العرض</option>
+                                      <option> ثابت</option>
+                                      <option>النسبة المئوية </option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="col-sm-6">
+                                  <div class="mb-3">
+                                    <label class="form-label">قيمة العرض </label>
+                                    <input type="text" class="form-control" placeholder="ادخل قيمة العرض">
+                                  </div>
+                                </div>
+                              </div>                  -->
+                          </div>
+                      </form>
+                    </div>
+                    <!-- end job detail tab pane -->
+                    <div class="tab-pane" id="educationDetail">
+                      <form id="educationForm" method="post" action="#">
+                        <div class="form-btns">
+                          <h5 class="mb-2">البيانات الأساسية التي تخص الزوار  </h5>
+                          <span class="add"><a href="#!"> <i class="ph-duotone ph-plus"></i></a></span>
+                          <span class="delete"><a href="#!"><i class="ph-duotone ph-trash"></i></a></span>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="mb-3">
+                              <label class="form-label"> إسم المرافق </label>
+                              <input type="text" class="form-control" placeholder="إسم المرافق">
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="mb-3">
+                              <label class="form-label"> رقم هوية المرافق </label>
+                              <input type="text" class="form-control" placeholder="رقم هوية المرافق">
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <div class="mb-3">
+                              <label class="form-label"> رقم هاتف المرافق </label>
+                              <input type="text" class="form-control" placeholder="رقم هاتف المرافق">
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <!-- end education detail tab pane -->
+                    <div class="tab-pane" id="finish">
+                      <form id="car" method="post" action="#">
+                        <div class="form-btns">
+                          <h5 class="mb-2">البيانات الأساسية التي تخص المواد</h5>
+                          <span class="add"><a href="#!"> <i class="ph-duotone ph-plus"></i></a></span>
+                          <span class="delete"><a href="#!"><i class="ph-duotone ph-trash"></i></a></span>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="mb-3">
+                              <label class="form-label"> الإسم </label>
+                              <input type="text" class="form-control" placeholder="الإسم">
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="mb-3">
+                              <label class="form-label" >الكمية</label>
+                              <input type="text" class="form-control" placeholder="الكمية">
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                      <!-- end row -->
+                    </div>
+                    <!-- END: Define your tab pans here -->
+                    <!-- START: Define your controller buttons here-->
+                    <div class="d-flex wizard justify-content-between mt-3">
+                      <div class="first">
+                        <a href="javascript:void(0);" class="btn btn-secondary">
+                          الخطوة الأولى
+                        </a>
+                      </div>
+                      <div class="d-flex">
+                        <div class="previous me-2">
+                          <a href="javascript:void(0);" class="btn btn-secondary">
+                            السابق
+                          </a>
+                        </div>
+                        <div class="next">
+                          <a href="javascript:void(0);" class="btn btn-secondary mt-3 mt-md-0">
+                            التالي
+                          </a>
+                        </div>
+                      </div>
+                      <div class="last">
+                        <a href="javascript:void(0);" class="btn btn-secondary mt-3 mt-md-0">
+                          الخطوة الأخيرة
+                        </a>
+                      </div>
+                    </div>
+                    <!-- END: Define your controller buttons here-->
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+
+        </div>
+        <!-- [ Main Content ] end -->
+      </div>
+    </div>
+    </div>
+    </div>
+
+  <!-- Required Js -->
+  <script src="assets/js/plugins/popper.min.js"></script>
+  <script src="assets/js/plugins/simplebar.min.js"></script>
+  <script src="assets/js/plugins/bootstrap.min.js"></script>
+
+  <script src="assets/js/pcoded.js"></script>
+
+  <script>layout_change('light');</script>
+  <script>layout_sidebar_change('light');</script>
+  <script>change_box_container('false');</script>
+  <script>layout_caption_change('true');</script>
+  <script>layout_rtl_change('true');</script>
+  <script>preset_change("preset-1");</script>
+
+  <!-- [Page Specific JS] start -->
+  <!-- wizard -->
+  <script src="assets/js/plugins/wizard.min.js"></script>
+  <script>
+    new Wizard("#basicwizard", {
+      validate: true,
+      progress: true  
+    });
+  </script>
+    <script src="assets/js/plugins/datepicker-full.min.js"></script>
+    <script>
+  (function () {
+      const d_week = new Datepicker(document.querySelector('#pc-datepicker-1'), {
+        buttonClass: 'btn'
+      });
+    })();
+    </script>
+  <!-- [Page Specific JS] end -->
+</body>
+<!-- [Body] end -->
+
+</html>

@@ -1,0 +1,635 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<!-- [Head] start -->
+
+<head>
+  <title> Pronight | برونايت </title>
+  <!-- [Meta] -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description"
+    content="">
+  <meta name="author" content="Pronight">
+
+  <!-- [Favicon] icon -->
+  <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+
+  <!-- [Page specific CSS] start -->
+  <link rel="stylesheet" href="assets/css/plugins/datepicker-bs5.min.css">
+  <link rel="stylesheet" href="assets/css/plugins/uppy.min.css">
+  <!-- [Page specific CSS] end -->
+  <link rel="stylesheet" href="assets/fonts/fontawesome.css">
+
+  <!-- [Template CSS Files] -->
+  <link rel="stylesheet" href="assets/css/style.css" id="main-style-link">
+  <link rel="stylesheet" href="assets/css/style-preset.css">
+  <link rel="stylesheet" href="assets/css/custom.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<!-- [Head] end -->
+<!-- [Body] Start -->
+
+<body data-pc-preset="preset-1" data-pc-sidebar-theme="light" data-pc-sidebar-caption="true" data-pc-direction="rtl"
+  data-pc-theme="light">
+  <!-- [ Pre-loader ] start -->
+  <div class="loader-bg">
+    <div class="loader-track">
+      <div class="loader-fill"></div>
+    </div>
+  </div>
+  <!-- [ Pre-loader ] End -->
+  <!-- [ Sidebar Menu ] start -->
+  <nav class="pc-sidebar">
+    <div class="navbar-wrapper">
+      <div class="m-header">
+        <a href="index.html" class="b-brand text-primary">
+          <!-- ========   Change your logo from here   ============ -->
+          <img src="assets/images/logo.png" alt="logo Pronight image" class="logo-lg">
+        </a>
+      </div>
+      <div class="navbar-content">
+        <ul class="pc-navbar">
+          <li class="pc-item">
+            <a href="index.html" class="pc-link">
+              <span class="pc-micon">
+                <i class="ph-duotone ph-house"></i>
+              </span>
+              <span class="pc-mtext">الرئيسية</span>
+            </a>
+          </li>
+          <li class="pc-item">
+            <a href="Contracts.html" class="pc-link active">
+              <span class="pc-micon">
+                <i class="ph-duotone ph-file-text"></i>
+              </span>
+              <span class="pc-mtext">العقود</span>
+            </a>
+          </li>
+          <li class="pc-item">
+            <a href="visits.html" class="pc-link">
+              <span class="pc-micon">
+                <i class="ph-duotone ph-identification-card"></i>
+              </span>
+              <span class="pc-mtext">تصاريح الزيارة</span>
+            </a>
+          </li>
+          <li class="pc-item">
+            <a href="units.html" class="pc-link">
+              <span class="pc-micon">
+                <i class="ph-duotone ph-buildings"></i>
+              </span>
+              <span class="pc-mtext">الوحدات</span>
+            </a>
+          </li>
+          <li class="pc-item">
+            <a href="reservation.html" class="pc-link">
+              <span class="pc-micon">
+                <i class="ph-duotone ph-calendar-check"></i>
+              </span>
+              <span class="pc-mtext">الحجوزات</span></a>
+          </li>
+          <li class="pc-item">
+            <a href="units-reservation.html" class="pc-link" target="_blank"><span class="pc-micon">
+              <i class="ph-duotone ph-ticket"></i></span>
+              <span class="pc-mtext">الحجز الخارجي</span>
+            </a>
+          </li>
+          <li class="pc-item">
+            <a href="units-special-prices.html" class="pc-link">
+              <span class="pc-micon"> <i class="ph-duotone ph-tag"></i>
+              </span><span
+                class="pc-mtext">أسعار الوحدات الخاصة</span></a>
+          </li>
+        </ul>
+      </div>
+      <!-- <div class="card pc-user-card">
+        <div class="card-body">
+          <div class="d-flex align-items-center">
+            <div class="flex-shrink-0">
+              <img src="assets/images/user/avatar-1.jpg" alt="user-image" class="user-avtar wid-45 rounded-circle">
+            </div>
+            <div class="flex-grow-1 ms-3 me-2">
+              <h6 class="mb-0">Jonh Smith</h6>
+              <small>Administrator</small>
+            </div>
+            <div class="dropdown">
+              <a href="#" class="btn btn-icon btn-link-secondary avtar arrow-none dropdown-toggle"
+                data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,20">
+                <i class="ph-duotone ph-windows-logo"></i>
+              </a>
+              <div class="dropdown-menu">
+                <ul>
+                  <li><a class="pc-user-links">
+                      <i class="ph-duotone ph-user"></i>
+                      <span>My Account</span>
+                    </a></li>
+                  <li><a class="pc-user-links">
+                      <i class="ph-duotone ph-gear"></i>
+                      <span>Settings</span>
+                    </a></li>
+                  <li><a class="pc-user-links">
+                      <i class="ph-duotone ph-lock-key"></i>
+                      <span>Lock Screen</span>
+                    </a></li>
+                  <li><a class="pc-user-links">
+                      <i class="ph-duotone ph-power"></i>
+                      <span>Logout</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </nav>
+  <!-- [ Sidebar Menu ] end -->
+  <!-- [ Header Topbar ] start -->
+  <header class="pc-header">
+    <div class="header-wrapper"> <!-- [Mobile Media Block] start -->
+      <!-- [Mobile Media Block end] -->
+      <div class="ms-auto">
+        <ul class="list-unstyled">
+          <li class="dropdown pc-h-item header-user-profile">
+            <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button"
+              aria-haspopup="false" data-bs-auto-close="outside" aria-expanded="false">
+              <img src="assets/images/user/avatar-2.jpg" alt="user-image" class="user-avtar">
+            </a>
+            <div class="dropdown-menu dropdown-user-profile dropdown-menu-end pc-h-dropdown">
+              <div class="dropdown-header d-flex align-items-center justify-content-between">
+                <h5 class="m-0">الملف الشخصي</h5>
+              </div>
+              <div class="dropdown-body">
+                <div class="profile-notification-scroll position-relative" style="max-height: calc(100dvh - 225px)">
+                  <ul class="list-group list-group-flush w-100">
+                    <li class="list-group-item">
+                      <div class="d-flex align-items-center">
+                        <div class="flex-shrink-0">
+                          <img src="assets/images/user/avatar-2.jpg" alt="user-image" class="wid-50 rounded-circle">
+                        </div>
+                        <div class="flex-grow-1 mx-3">
+                          <h5 class="mb-0">محمد عبدالرحمن أحمد</h5>
+                          <a class="link-primary" href="mailto:carson.darrin@company.io">mohamedahmed@pronight.com</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <a href="#" class="dropdown-item">
+                        <span class="d-flex align-items-center">
+                          <i class="ph-duotone ph-user-circle"></i>
+                          <span>تعديل الملف الشخصي</span>
+                        </span>
+                      </a>
+                      <a href="#" class="dropdown-item">
+                        <span class="d-flex align-items-center">
+                          <i class="ph-duotone ph-file-text"></i>
+                          <span>اتفاقية الاستخدام</span>
+                        </span>
+                      </a>
+                      <a href="#" class="dropdown-item">
+                        <span class="d-flex align-items-center">
+                          <i class="ph-duotone ph-power"></i>
+                          <span>تسجيل الخروج</span>
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- [ Header ] end -->
+
+    <!-- [ Main Content ] start -->
+    <div class="pc-container">
+      <div class="pc-content">
+                <!-- [ breadcrumb ] start -->
+                <div class="page-header">
+                  <div class="page-block">
+                    <div class="row align-items-center">
+                      <div class="col-md-12">
+                        <ul class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="units.html">الوحدات</a></li>
+                          <li class="breadcrumb-item" aria-current="page">تعديل الوحدة </li>
+                        </ul>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="page-header-title">
+                          <h2 class="mb-0"> تعديل الوحدة </h2>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- [ breadcrumb ] end -->
+        <!-- [ Main Content ] start -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="view-unit-class edit-unit">
+              <div class="">
+                <h5 class="mb-2">البيانات الأساسية التي تخص الوحدة</h5>
+              </div>
+              <div class="row mt-4">
+                <div class="col">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="mb-3">
+                        <label class="form-label">اسم الوحدة (بالعربية )</label>
+                        <input type="text" class="form-control" value=" اسم الوحدة">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="mb-3">
+                        <label class="form-label">اسم الوحدة ( بالانجليزية )</label>
+                        <input type="text" class="form-control" value="ادخل اسم الوحدة">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="mb-3">
+                        <label class="form-label">السعر</label>
+                        <input type="text" class="form-control" value="ادخل سعر الوحدة">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="mb-3">
+                        <label class="form-label"> المساحة </label>
+                        <input type="text" class="form-control" value="ادخل مساحة الوحدة">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="mb-3">
+                        <label class="form-label"> الوصف (بالعربية) </label>
+                        <textarea class="form-control" value="الوصف (بالعربية)"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="mb-3">
+                        <label class="form-label"> الوصف ( بالانجليزية) </label>
+                        <textarea class="form-control" value="الوصف (بالانجليزية)"></textarea>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="mb-3 address-input-group">
+                        <label class="form-label">اختر المدينة</label>
+                        <select class="form-select">
+                          <option selected> الرياض</option>
+                          <option>جدة </option>
+                          <option> المدينة </option>
+                        </select>
+                      </div>
+                      <label class="form-label">العنوان بالتفصيل</label>
+                      <div class="address-input">
+                        <input type="text" id="address" value="اكتب العنوان هنا" />
+                      </div>
+                      <div id="map"></div>
+                    </div>
+                    <div class="col-sm-6">
+                      <label class="form-label">الصورة الأساسية للوحدة</label>
+                      <div id="upload-master-image">
+                        <div class="for-DragDrop"></div>
+                        <div class="for-ProgressBar"></div>
+                        <div class="uploaded-files mt-3">
+                          <h5>الصور المحملة:</h5>
+                          <ol></ol>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <label class="form-label">الصور الفرعية للوحدة</label>
+                      <div class="col-sm-4">
+                        <div id="upload-branch-image1">
+                          <div class="for-DragDrop"></div>
+                          <div class="for-ProgressBar"></div>
+                          <div class="uploaded-files mt-3">
+                            <h5>الصور المحملة:</h5>
+                            <ol></ol>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div id="upload-branch-image2">
+                          <div class="for-DragDrop"></div>
+                          <div class="for-ProgressBar"></div>
+                          <div class="uploaded-files mt-3">
+                            <h5>الصور المحملة:</h5>
+                            <ol></ol>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div id="upload-branch-image3">
+                          <div class="for-DragDrop"></div>
+                          <div class="for-ProgressBar"></div>
+                          <div class="uploaded-files mt-3">
+                            <h5>الصور المحملة:</h5>
+                            <ol></ol>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>             
+            </div>
+            <div class="view-unit-class">
+              <div class="">
+                <h5 class="mb-2">البيانات الأساسية التي تخص البالغين والأطفال</h5>
+              </div>
+              <div class="row mt-4">
+                <div class="col-sm-6">
+                  <div class="mb-3">
+                    <label class="form-label">الحد الأقصى لعدد البالغين </label>
+                    <input type="text" class="form-control" value="ادخل عدد البالغين">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="mb-3">
+                    <label class="form-label"> السعر للبالغ</label>
+                    <input type="text" class="form-control" value=" السعر للبالغ">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="mb-3">
+                    <label class="form-label">الحد الأقصى لعدد الأطفال </label>
+                    <input type="text" class="form-control" value="ادخل عدد الأطفال">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="mb-3">
+                    <label class="form-label"> السعر للطفل</label>
+                    <input type="text" class="form-control" value=" السعر للطفل">
+                  </div>
+                </div>
+                      <div class="col-sm-6">
+                        <div class="mb-3">
+                          <label class="form-label">تاريخ بدء العرض</label>
+                          <div class="input-group date">
+                            <input type="text" class="form-control" value="Select date" id="pc-datepicker-1">
+                            <span class="input-group-text">
+                              <i class="ph-duotone ph-calendar"></i>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="mb-3">
+                          <label class="form-label">تاريخ انتهاءالعرض</label>
+                          <div class="input-group date">
+                            <input type="text" class="form-control" value="Select date" id="pc-datepicker-2">
+                            <span class="input-group-text">
+                              <i class="ph-duotone ph-calendar"></i>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="mb-3 ">
+                          <label class="form-label">اختر نوع العرض</label>
+                          <select class="form-select">
+                            <option> اختر نوع العرض</option>
+                            <option selected> ثابت</option>
+                            <option>النسبة المئوية </option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="mb-3">
+                          <label class="form-label">قيمة العرض </label>
+                          <input type="text" class="form-control" value="ادخل قيمة العرض">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="mb-3 address-input-group">
+                          <label class="form-label">اختر المرفق</label>
+                          <select class="form-select">
+                            <option> اختر المرفق</option>
+                            <option selected>واى فاى </option>
+                            <option> موقف سيارات </option>
+                            <option>تكييف هواء </option>
+                            <option> حمام سباحة </option>
+                            <option> مجالس  </option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="mb-3">
+                          <label class="form-label"> وصف إضافي للمرفق (بالعربية) </label>
+                          <textarea class="form-control" value="الوصف (بالعربية)"></textarea>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="mb-3">
+                          <label class="form-label"> وصف إضافي للمرفق (بالانجليزية) </label>
+                          <textarea class="form-control" value="الوصف (بالعربية)"></textarea>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="mb-3 address-input-group">
+                          <label class="form-label">اختر المحتوى</label>
+                          <select class="form-select">
+                            <option> اختر المحتوى</option>
+                            <option selected>الغرف </option>
+                            <option> الصالات </option>
+                            <option> متر </option>
+                            <option> سرير </option>
+                            <option> حمام  </option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="mb-3">
+                          <label class="form-label"> قيمة المحتوى </label>
+                          <input type="text" class="form-control" value="قيمةالمحتوى">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="mb-3">
+                          <label class="form-label"> العنوان (بالعربية) </label>
+                          <input type="text" class="form-control" value="العنوان (بالعربية) ">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="mb-3">
+                          <label class="form-label" >العنوان (بالانجليزية) </label>
+                          <input type="text" class="form-control" value="العنوان (بالانجليزية) ">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="mb-3">
+                          <label class="form-label" > السعر</label>
+                          <input type="text" class="form-control" value="السعر">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="mb-3 form-check form-switch custom-switch-v1">
+                            <input id="toggleBtn1" type="checkbox" class="form-check-input input-primary">
+                            <label class="form-check-label" for="toggleBtn">لكل شخص</label>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="mb-3">
+                            <button class="form-control send-message" type="submit">إرسال</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+           
+
+          </div>
+           
+          </div>
+                  <!-- [ Main Content ] end -->
+      </div>
+    </div>
+
+  <!-- Required Js -->
+  <script src="assets/js/plugins/popper.min.js"></script>
+  <script src="assets/js/plugins/simplebar.min.js"></script>
+  <script src="assets/js/plugins/bootstrap.min.js"></script>
+
+  <script src="assets/js/pcoded.js"></script>
+  <script>layout_change('light');</script>
+  <script>layout_sidebar_change('light');</script>
+  <script>change_box_container('false');</script>
+  <script>layout_caption_change('true');</script>
+  <script>layout_rtl_change('true');</script>
+  <script>preset_change("preset-1");</script>
+
+   <!-- [Page Specific JS] start -->
+    <script src="assets/js/plugins/datepicker-full.min.js"></script>
+    <script>
+  (function () {
+      const d_week = new Datepicker(document.querySelector('#pc-datepicker-1'), {
+        buttonClass: 'btn'
+      });
+    })();
+    (function () {
+      const d_week = new Datepicker(document.querySelector('#pc-datepicker-2'), {
+        buttonClass: 'btn'
+      });
+    })();
+    </script>
+
+<!-- Start map Script -->
+<script>
+  let map;
+  let geocoder;
+  let marker;
+
+  function initMap() {
+    const defaultLocation = { lat: 24.7136, lng: 46.6753 }; // الرياض
+
+    map = new google.maps.Map(document.getElementById("map"), {
+      center: defaultLocation,
+      zoom: 13,
+    });
+
+    marker = new google.maps.Marker({
+      map: map,
+      position: defaultLocation,
+    });
+
+    geocoder = new google.maps.Geocoder();
+
+    document.getElementById("address").addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    const address = document.getElementById("address").value;
+    geocodeAddress(address);
+  }
+});
+
+  }
+
+  function geocodeAddress(address) {
+    geocoder.geocode({ address: address }, (results, status) => {
+      if (status === "OK") {
+        const location = results[0].geometry.location;
+        map.setCenter(location);
+        marker.setPosition(location);
+        map.setZoom(15);
+      } else {
+        alert("العنوان غير صحيح أو لم يتم العثور عليه.");
+      }
+    });
+  }
+</script>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJ4shhmSia3lS_qlIeueaCeYBg7-LUiF4&callback=initMap">
+</script>
+<!-- End map Script -->
+  
+  <script src="assets/js/plugins/uppy.min.js"></script>
+
+  <script type="module">
+    // Function for displaying uploaded files
+    const onUploadSuccess = (elForUploadedFiles) => (file, response) => {
+      const url = response.uploadURL;
+      const fileName = file.name;
+
+      const li = document.createElement('li');
+      const a = document.createElement('a');
+      a.href = url;
+      a.target = '_blank';
+      a.appendChild(document.createTextNode(fileName));
+      li.appendChild(a);
+
+      document.querySelector(elForUploadedFiles).appendChild(li);
+    };
+
+    import { Uppy, Dashboard, Webcam, Tus, DragDrop, ProgressBar } from 'https://releases.transloadit.com/uppy/v3.23.0/uppy.min.mjs';
+
+    // for structure master image
+    const uppy1 = new Uppy({ debug: true, autoProceed: true })
+      .use(DragDrop, { target: '#upload-master-image .for-DragDrop' })
+      .use(Tus, { endpoint: 'https://tusd.tusdemo.net/files/' })
+      .use(ProgressBar, { target: '#upload-master-image .for-ProgressBar', hideAfterFinish: false })
+      .on('upload-success', onUploadSuccess('#upload-master-image .uploaded-files ol'));
+
+    uppy1.on('success', (fileCount) => {
+      console.log(`${fileCount} files uploaded`);
+    });
+    // for structure branch image1
+    const uppy2 = new Uppy({ debug: true, autoProceed: true })
+      .use(DragDrop, { target: '#upload-branch-image1 .for-DragDrop' })
+      .use(Tus, { endpoint: 'https://tusd.tusdemo.net/files/' })
+      .use(ProgressBar, { target: '#upload-branch-image1 .for-ProgressBar', hideAfterFinish: false })
+      .on('upload-success', onUploadSuccess('#upload-branch-image1 .uploaded-files ol'));
+
+    uppy2.on('success', (fileCount) => {
+      console.log(`${fileCount} files uploaded`);
+    });
+       // for structure branch image2
+       const uppy3 = new Uppy({ debug: true, autoProceed: true })
+      .use(DragDrop, { target: '#upload-branch-image2 .for-DragDrop' })
+      .use(Tus, { endpoint: 'https://tusd.tusdemo.net/files/' })
+      .use(ProgressBar, { target: '#upload-branch-image2 .for-ProgressBar', hideAfterFinish: false })
+      .on('upload-success', onUploadSuccess('#upload-branch-image2 .uploaded-files ol'));
+
+    uppy3.on('success', (fileCount) => {
+      console.log(`${fileCount} files uploaded`);
+    });
+       // for structure branch image3
+       const uppy4 = new Uppy({ debug: true, autoProceed: true })
+      .use(DragDrop, { target: '#upload-branch-image3 .for-DragDrop' })
+      .use(Tus, { endpoint: 'https://tusd.tusdemo.net/files/' })
+      .use(ProgressBar, { target: '#upload-branch-image3 .for-ProgressBar', hideAfterFinish: false })
+      .on('upload-success', onUploadSuccess('#upload-branch-image3 .uploaded-files ol'));
+
+    uppy4.on('success', (fileCount) => {
+      console.log(`${fileCount} files uploaded`);
+    });
+  </script>
+  <!-- [Page Specific JS] end -->
+</body>
+<!-- [Body] end -->
+
+</html>

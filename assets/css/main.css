@@ -1,0 +1,612 @@
+.pc-container{
+    background: #edfff469;
+}
+.pc-header{
+    background: #fff;
+    box-shadow: var(--pc-sidebar-shadow);
+}
+.page-header{
+    margin-top: 30px;
+}
+.form-label{
+    font-family: var(--font-2);
+}
+.Contracts-cards,.Contracts-units{
+    padding: 40px 0px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.Contracts-cards .filters-card,
+.Contracts-units .filters-card{
+    margin-bottom: 20px;
+}
+.Contracts-cards .filters-card .form-search,
+.Contracts-units .filters-card .form-search{
+    display: block;
+}
+.Contracts-cards .filters-card .form-search input,
+.Contracts-units .filters-card .form-search input{
+    border: 1px solid #ddd;
+    max-width: 100%;
+    padding: 12px 39px;
+}
+.Contracts-cards .Contracts-card{
+    padding: 20px 15px;
+    border: 1px solid #eee;
+    box-shadow: 0 5px 10px rgba(27, 46, 94, 0.12);
+}
+.Contracts-cards .Contracts-card:hover{
+    padding: 20px 15px;
+    border: 2px solid #62ba87;
+    box-shadow: 0 5px 10px rgba(27, 46, 94, 0.12);
+}
+.Contracts-cards .Contracts-card .Contracts-icon{
+    width: 50px;
+    height: 50px;
+    background: #e5f6f3;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 8px 15px 0;
+    font-size: 24px;
+}
+.Contracts-cards .Contracts-card .Contracts-icon i{
+    color: #38955f;
+    padding: 2px 12px;
+    line-height: 46px;
+}
+.Contracts-cards .Contracts-card .Contracts-info h4{
+    font-size: 18px;
+    color: #464646;
+}
+.Contracts-cards .Contracts-card .Contracts-info h5{
+    color: #444444;
+    font-weight: 500;
+    padding-top: 18px;
+}
+.Contracts-cards .Contracts-card .Contracts-info h4 .paid,
+.Contracts-cards .Contracts-card .Contracts-info h4 .confirmd{
+    font-size: 12px;
+    background: #1fb31c;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+.Contracts-cards .Contracts-card .Contracts-info h4 .notpaid,
+.Contracts-cards .Contracts-card .Contracts-info h4 .notconfirmd{
+    font-size: 12px;
+    background: #f80303;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+.Contracts-cards .Contracts-card .Contracts-date{
+    margin-right: 50px;
+}
+.Contracts-cards .Contracts-card .Contracts-date h5{
+    color: #746d6d;
+    font-weight: 600;
+    font-size: 17px;
+}
+.Contracts-cards .Contracts-card .Contracts-date h6{
+    color: #746d6d;
+    font-weight: 600;
+    font-size: 17px;
+    padding-top: 15px;
+}
+.Contracts-cards .Contracts-card .Contracts-btns h6{
+    width: 36px;
+    height: 33px;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+.Contracts-cards .Contracts-card .Contracts-btns h6 a,
+.Contracts-cards .Contracts-card .Contracts-btns h6 a:hover{
+    color: #fff;
+}
+.Contracts-cards .Contracts-card .Contracts-btns h6:first-child{
+    background: #005aff;
+}
+.Contracts-cards .Contracts-card .Contracts-btns h6:last-child{
+    background: #f80303;
+}
+.Contracts-cards .add-contracts{
+    margin-right: 100px;
+}
+.Contracts-units .add-contracts {
+    display: flex;
+    justify-content: flex-end;
+}
+.Contracts-cards .add-contracts h5,
+.Contracts-units .add-contracts h5{
+    width: 160px;
+    text-align: center;
+    line-height: 23px;
+    height: 40px;
+    color: #62ba87;
+    font-size: 13px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    background: #e6f6fe;
+}
+.Contracts-cards .add-contracts h5 a,
+.Contracts-units .add-contracts h5 a{
+    color: #62ba87;
+}
+.nav-pills .nav-link span{
+    font-weight: 500;
+    font-size: 16px;
+}
+.nav-pills .nav-link i{
+    vertical-align: middle;
+    padding-left: 4px;
+}
+/* .nav-link:hover, .nav-link:focus{
+    color:#38955f;
+} */
+#basicwizard .contract-price{
+    color: #000000;
+    font-weight: 600;
+}
+#basicwizard .tab-pane .add,
+#basicwizard .tab-pane .delete{
+    position: absolute;
+    left: 9%;
+    right: auto;
+    top: 0px;
+    color: #fff;
+    width: 36px;
+    height: 36px;
+    border-radius: 5px;
+    display: block;
+    line-height: 40px;
+}
+#basicwizard .tab-pane .add i,
+#basicwizard .tab-pane .delete i{
+    color: #fff;
+    font-size: 20px;
+    background: none;
+    font-weight: 800;
+    line-height: 20px;
+    padding: 0px 8px;
+}
+#basicwizard .tab-pane .add{
+    background: #00a5ff;
+}
+#basicwizard .tab-pane .delete{
+    left: 4%;
+    background: #f80303;
+}
+.Contracts-units .card-body{
+    padding: 15px 25px;
+}
+.Contracts-units .card-body p{
+    font-size: 16px;
+    color: #000 !important;
+}
+.Contracts-units .card-body h5{
+    color: #555;
+}
+.Contracts-units .product-card .btn-prod-card{
+    width: 65px;
+    margin: 0 10px;
+    color: #017632;
+}
+#basicwizard .form-btns{
+    position: relative;
+}
+.Contracts-units .product-card .edit-icon a,
+.visit-cards a.edit-icon{
+    color: #005aff;
+}
+.Contracts-units .product-card .edit-icon:hover a,
+.visit-cards a.edit-icon{
+    background: #005aff;
+    color: #fff;
+}
+.Contracts-units .product-card .delete-icon a,
+.visit-cards a.delete-icon{
+    color: #f80303;
+}
+.Contracts-units .product-card .delete-icon:hover a,
+.Contracts-units .product-card .delete-icon:focus a,
+.visit-cards a.delete-icon{
+    background: #f80303;
+    color: #fff;
+}
+.Contracts-units .product-card .card-img-top .img-prod{
+    height: 200px;
+    width: 100%;
+}
+#basicwizard .first-row{
+    margin-bottom: 45px;
+}
+#basicwizard .address-input-group{
+    position: relative;
+    display: block;
+}
+#map {
+    height: 250px;
+    width: 100%;
+    margin-top: 2px;
+    border-radius: 12px;
+  }
+  .address-input {
+    position: absolute;
+    top: 48%;
+    right: 34px;
+    left: auto;
+    z-index: 5;
+    display: block;
+    width: 436px;
+  }
+  .address-input input {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  #upload-master-image .uppy-DragDrop--isDragDropSupported{
+    height: 300px !important;
+  }
+  .uppy-DragDrop--isDragDropSupported {
+    border: 1px solid #eee;
+    height: 150px !important;
+}
+.uploaded-files h5{
+    font-weight: 400;
+    font-size: 15px;
+}
+.breakline{
+    border: 2px solid rgb(122, 122, 122);
+    width: 80%;
+    margin:30px auto;
+}
+.form-check label {
+    cursor: pointer;
+    color: #121212;
+}
+#car .custom-switch-v1.form-switch{
+    margin-top: 28px;
+}
+/* view-unit-page */
+.view-unit-class{
+    background: #fff;
+    padding: 20px 15px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(27, 46, 94, 0.12);
+    margin-bottom: 30px;
+}
+.unit-detail{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.unit-detail .unit-icon{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: #cbf8de;
+    color: #62ba87;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 26px;
+}
+.unit-detail div h6,
+.unit-adults div h6{
+    font-size: 13px;
+}
+.unit-detail div h5,
+.unit-adults div h5{
+    color: #838383;
+}
+.unit-info{
+    display: block;
+    padding: 20px 15px 0;
+}
+.unit-info p{
+    font-size: 15px;
+    color: #6e6e6e;
+    font-family: var(--font-2);
+    line-height: 1.8;
+}
+.unit-images .all-images{
+    display: flex;
+    justify-content: space-between;
+}
+.unit-images .all-images div{
+    width: calc(100% / 4);
+    padding: 10px;
+}
+.unit-images .all-images img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.unit-adults{
+    display: flex;
+        margin-bottom: 25px;
+        justify-content: space-between;
+}
+.unit-adults div {
+
+    margin: 0 15px 0 50px;
+}
+.unit-card-table .nav-link{
+    font-weight: 500;
+    font-size: 16px;
+}
+.unit-card-table td{
+    height: 45px;
+}
+.unit-card-table td:first-child{
+    font-size: 15px;
+    color: #505050 !important;
+    font-weight: 600;
+
+}
+.edit-unit .address-input{
+    position: absolute;
+    top: 39%;
+    right: 65px;
+}
+.view-unit-class .send-message,
+.pc-content .send-message{
+    background: #62ba87;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 700;
+    border: none;
+    width: 300px;
+    height: 46px;
+    border-radius: 8px;
+    float: left;
+}
+.Confirmatiom{
+    text-align: center;
+}
+.Confirmatiom .user-card p{
+    font-size: 23px;
+    margin: 15px;
+}
+.Confirmatiom .user-card i{
+    font-size: 60px;
+    color: #f00;
+}
+.Confirmatiom .user-card .confirm-btn-modal button,
+.Confirmatiom .user-card .delete-btn-modal button{
+    width: 100%;
+    height: 45px;
+    font-size: 17px;
+    font-weight: 600;
+}
+.Confirmatiom .user-card .delete-btn-modal button{
+    background: #fff;
+    color: #62ba87;
+    border: 2px solid #62ba87;
+}
+.Confirmatiom .user-card .confirm-btn-modal button:hover{
+    background: #62ba87;
+    color: #fff;
+}
+.page-header-title h2{
+    font-size: 20px;
+}
+/* visits-page */
+.visit-cards .sector-icon{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #e8f5ee;
+    border-radius: 50px;
+    padding: 0 11px;
+    color: #62ba87;
+    font-size: 18px;
+}
+.visit-cards a.view-icon{
+    background: #62ba87;
+    color: #fff;
+}
+.visit-cards .table > thead{
+    background: #ebfff3;
+}
+.visit-cards .table > tbody > tr:hover{
+    border: 1px solid #DBE0E5;
+    box-shadow: 0 5px 10px #eee;
+    background: #fff;
+    border-radius: 8px;
+}
+.pc-content .btn-send{
+    margin-bottom: 100px;
+}
+/* ------------------- reservation ------------- */
+.reservation{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    box-shadow: 0 5px 10px #eee;
+    border-radius: 12px;
+    padding: 15px 20px;
+}
+.reservation .form-search{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    display: flex;
+}
+.reservation .form-search .icon-search{
+    top: 7px;
+}
+.reservation .same-card{
+    background: #f5f8f7fc;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    padding: 20px 6px;
+}
+.reservation .same-card h6{
+    font-size: 12px;
+    margin-bottom: 20px;
+    padding-right: 7px;
+}
+.reservation .same-card .new-reserve{
+    width: 100%;
+    background: #fff;
+    height: 235px;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.reservation .same-card .new-reserve .icon{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        background: #e8f5ee;
+        border-radius: 50px;
+        padding: 0 11px;
+        color: #62ba87;
+        font-size: 18px;
+    }
+.reservation .same-card .new-reserve .new-reverse-detail{
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}    
+.reservation .same-card .new-reserve h5{
+    font-size: 12px;
+} 
+.reservation .same-card .new-reserve h5 a{
+    font-size: 12px;
+    float: left;
+}
+.reservation .same-card .name-detail{
+    padding-right: 10px;
+}
+.reservation .same-card .new-reserve .name-detail h6{
+    font-size: 11px;
+    font-weight: 600;
+    color: #494949;
+    margin-bottom: 7px;
+    padding-right: 0;
+}
+.reservation .same-card .new-reserve .days,
+.reservation .same-card .new-reserve .cost{
+    display: flex;
+    justify-content: space-between;
+}
+.reservation .same-card .new-reserve .days i,
+.reservation .same-card .new-reserve .cost i{
+    float: right;
+    padding-left: 6px;
+    font-size: 17px;
+    color: #595959;
+}
+.reservation .same-card .new-reserve .days span,
+.reservation .same-card .new-reserve .cost span{
+    font-size: 15px;
+    color: #595959;
+}
+.reservation .same-card .new-reserve .reverse-btns,
+.reverse-detail .reverse-detail-card .reverse-btns{
+    float: left;
+}
+
+
+.reservation .same-card .new-reserve .refuse-btn,
+.reverse-detail .reverse-detail-card .reverse-btns .refuse-btn{
+    border: 1px solid #f80303;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background: #f80303;
+    font-size: 14px;
+    line-height: 25px;
+    padding-bottom: 8px;
+    padding-top: 6px;
+    color: #fff;
+}
+.reservation .same-card .new-reserve .accept-btn,
+.reverse-detail .reverse-detail-card .reverse-btns .accept-btn{
+    border: 1px solid #62ba87;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background: #62ba87;
+    font-size: 14px;
+    line-height: 25px;
+    padding-bottom: 8px;
+    padding-top: 6px;
+    margin-left: 15px;
+    color: #fff;
+}
+.reservation .same-card .current-reverse{
+    height: 175px;
+}
+.reverse-detail .reverse-info{
+    padding: 0 20px;
+    display: flex;
+}
+.reverse-detail .reverse-detail-card{
+    box-shadow: 0 4px 8px #eee;
+    margin: 20px 10px 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px 0;
+}
+.reverse-detail .reverse-detail-card p{
+    padding-right: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+    font-family: var(--font-1);
+}
+.reverse-detail .reverse-detail-card .detail-title{
+    padding: 11px 20px;
+    background: #e6f6fe;
+    margin: 0 12px;
+    border-radius: 10px;
+    line-height: 17px;
+    margin-bottom: 20px;
+}
+.reverse-detail .reverse-detail-card .detail-title h5{
+    font-size: 15px;
+    line-height: 15px;
+}
+.reverse-detail .reverse-detail-card .reverse-info span{
+    background: #ffea00;
+    font-size: 6px;
+    padding: 2px 5px;
+    border-radius: 50px;
+    margin-left: 10px;
+}
+.reverse-detail .reverse-detail-card .reverse-btns{
+    display: flex;
+    justify-content: flex-end;
+    float: none;
+    margin-left: 20px;
+}
+.reverse-detail .reverse-detail-card .reverse-btns a{
+    padding: 8px 45px !important;
+}
+.add-unit-reservation h5{
+    margin-bottom: 30px;
+}
+.add-unit-reservation .send-message {
+    background: #62ba87;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 700;
+    border: none;
+    width: 100%;
+    margin-top: 28px;
+    border-radius: 8px;
+}

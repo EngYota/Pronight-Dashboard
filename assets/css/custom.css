@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "fontRegular";
+  font-display: swap;
+  src: url(../fonts/PoppinsRegular.ttf);
+}
+[data-pc-preset=preset-1] {
+  --pc-sidebar-active-color: #00a988;
+  --bs-blue: #00a988;
+  --bs-primary: #00a988;
+  --bs-primary-rgb: 0, 169, 136;
+  --bs-primary-light: #e2fff9;
+  --bs-link-color: #00a988;
+  --bs-link-color-rgb: 0, 169, 136;
+  --bs-link-hover-color: #017c64;
+  --bs-link-hover-color-rgb: to-rgb(shift-color($pc-primary, $link-shade-percentage));
+  --dt-row-selected: 0, 169, 136;
+  --bs-body-font-family: "fontRegular";
+}
+
+.pc-sidebar .pc-link {
+  text-transform: capitalize;
+}
+.pc-sidebar .pc-micon {
+  margin-right: 8px;
+}
+.pc-sidebar .pc-micon i {
+  font-size: 16px;
+}
+.pc-sidebar .pc-arrow i {
+  font-size: 12px;
+}
+.pc-sidebar .card.pc-user-card .pc-user-links {
+  gap: 8px;
+}
+.pc-sidebar .card.pc-user-card .pc-user-links i {
+  font-size: 20px;
+}
+.pc-sidebar .b-brand {
+  padding: 4px;
+}
+.pc-sidebar .b-brand img {
+  height: 40px;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.dataTableTable .image {
+  width: 100px;
+  aspect-ratio: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}/*# sourceMappingURL=custom.css.map */
