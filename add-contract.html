@@ -90,7 +90,7 @@
               <span class="pc-mtext">الحجوزات</span></a>
           </li>
           <li class="pc-item">
-            <a href="units-reservation.html" class="pc-link" target="_blank"><span class="pc-micon">
+            <a href="units-reservation.html" class="pc-link"><span class="pc-micon">
               <i class="ph-duotone ph-ticket"></i></span>
               <span class="pc-mtext">الحجز الخارجي</span>
             </a>
@@ -103,55 +103,57 @@
           </li>
         </ul>
       </div>
-      <!-- <div class="card pc-user-card">
-        <div class="card-body">
-          <div class="d-flex align-items-center">
-            <div class="flex-shrink-0">
-              <img src="assets/images/user/avatar-1.jpg" alt="user-image" class="user-avtar wid-45 rounded-circle">
-            </div>
-            <div class="flex-grow-1 ms-3 me-2">
-              <h6 class="mb-0">Jonh Smith</h6>
-              <small>Administrator</small>
-            </div>
-            <div class="dropdown">
-              <a href="#" class="btn btn-icon btn-link-secondary avtar arrow-none dropdown-toggle"
-                data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,20">
-                <i class="ph-duotone ph-windows-logo"></i>
-              </a>
-              <div class="dropdown-menu">
-                <ul>
-                  <li><a class="pc-user-links">
-                      <i class="ph-duotone ph-user"></i>
-                      <span>My Account</span>
-                    </a></li>
-                  <li><a class="pc-user-links">
-                      <i class="ph-duotone ph-gear"></i>
-                      <span>Settings</span>
-                    </a></li>
-                  <li><a class="pc-user-links">
-                      <i class="ph-duotone ph-lock-key"></i>
-                      <span>Lock Screen</span>
-                    </a></li>
-                  <li><a class="pc-user-links">
-                      <i class="ph-duotone ph-power"></i>
-                      <span>Logout</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
     </div>
   </nav>
   <!-- [ Sidebar Menu ] end -->
   <!-- [ Header Topbar ] start -->
   <header class="pc-header">
     <div class="header-wrapper"> <!-- [Mobile Media Block] start -->
+      <div class="me-auto pc-mob-drp">
+        <ul class="list-unstyled">
+          <!-- ======= Menu collapse Icon ===== -->
+          <li class="pc-h-item pc-sidebar-collapse">
+            <a href="#" class="pc-head-link ms-0" id="sidebar-hide">
+              <i class="ph-duotone ph-list"></i>
+            </a>
+          </li>
+          <li class="pc-h-item pc-sidebar-popup">
+            <a href="#" class="pc-head-link ms-0" id="mobile-collapse">
+              <i class="ph-duotone ph-list"></i>
+            </a>
+          </li>
+          <li class="dropdown pc-h-item d-inline-flex d-md-none">
+            <a class="pc-head-link dropdown-toggle arrow-none m-0" data-bs-toggle="dropdown" href="#" role="button"
+              aria-haspopup="false" aria-expanded="false">
+              <i class="ph-duotone ph-magnifying-glass"></i>
+            </a>
+            <div class="dropdown-menu pc-h-dropdown drp-search">
+              <form class="px-3">
+                <div class="mb-0 d-flex align-items-center">
+                  <input type="search" class="form-control border-0 shadow-none" placeholder="Search...">
+                  <button class="btn btn-light-secondary btn-search">بحث</button>
+                </div>
+              </form>
+            </div>
+          </li>
+          <li class="pc-h-item d-none d-md-inline-flex">
+            <form class="form-search">
+              <i class="ph-duotone ph-magnifying-glass icon-search"></i>
+              <input type="search" class="form-control" placeholder="بحث...">
+
+              <button class="btn btn-search" style="padding: 0"></button>
+            </form>
+          </li>
+        </ul>
+      </div>
       <!-- [Mobile Media Block end] -->
       <div class="ms-auto">
         <ul class="list-unstyled">
+          <li class="pc-h-item">
+            <a href="#!" class="btn-lang">
+              <i class="ph-duotone ph-translate"></i>
+            </a>
+          </li>
           <li class="dropdown pc-h-item header-user-profile">
             <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button"
               aria-haspopup="false" data-bs-auto-close="outside" aria-expanded="false">
@@ -390,7 +392,7 @@
                     <!-- end job detail tab pane -->
                     <div class="tab-pane" id="educationDetail">
                       <form id="educationForm" method="post" action="#">
-                        <div>
+                        <div class="form-btns">
                           <h5 class="mb-2">البيانات الأساسية التي تخص مرافقين المستأجر</h5>
                           <span class="add"><a href="#!"> <i class="ph-duotone ph-plus"></i></a></span>
                           <span class="delete"><a href="#!"><i class="ph-duotone ph-trash"></i></a></span>
@@ -426,7 +428,7 @@
                     <!-- end education detail tab pane -->
                     <div class="tab-pane" id="finish">
                       <form id="car" method="post" action="#">
-                        <div>
+                        <div class="form-btns">
                           <h5 class="mb-2">البيانات الأساسية التي تخص سيارات المستأجر</h5>
                           <span class="add"><a href="#!"> <i class="ph-duotone ph-plus"></i></a></span>
                           <span class="delete"><a href="#!"><i class="ph-duotone ph-trash"></i></a></span>

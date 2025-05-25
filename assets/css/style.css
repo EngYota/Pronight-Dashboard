@@ -1,11 +1,6 @@
 @charset "UTF-8";
 /**======================================================================
 =========================================================================
-Template Name: Nami - Bootstrap Admin Template
-Author: Nami
-Support: https://Nami.authordesk.app
-File: style.css
-
 1.  Generic-class css
 2.  Custom css
 3.  Sidebar css
@@ -48,7 +43,7 @@ File: style.css
 @import url("../fonts/phosphor/duotone/style.css");
 @font-face {
   font-family: "Font-1";
-  src: url("../fonts/SF_Regular.ttf");
+  src: url("../fonts/Montserrat-Arabic-Regular.ttf");
 }
 @font-face {
   font-family: "Font-bold";
@@ -98,6 +93,9 @@ h2,
 .h2 {
   font-weight: 700;
   font-family: var(--font-1);
+}
+span,a {
+  font-family: var(--font-1) !important;
 }
 
 :root,
@@ -20273,6 +20271,7 @@ pre[class*=language-] > code {
     position: relative;
     z-index: 5;
     background: inherit;
+    height: 100%;
   }
 }
 .layout-2 .pc-sidebar .pc-navbar > .pc-item {
