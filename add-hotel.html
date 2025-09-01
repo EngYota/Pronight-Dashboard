@@ -343,7 +343,73 @@
                     <div class="tab-pane" id="addressdetail">
                       <form id="addressForm" method="post" action="#">
                         <div class="">
-                          <h5 class="mb-2">البيانات الأساسية التي تخص عنوان  الوحدة</h5>
+                          <h5 class="mb-2">البيانات الأساسية التي تخص عنوان الفندق</h5>
+                        </div>
+                        <div class="row mt-4">
+                          <div class="col">
+                            <div class="row first-row">
+                              <div class="col-sm-6">
+                                <div class="mb-3 address-input-group">
+                                  <label class="form-label">اختر المدينة</label>
+                                  <select class="form-select">
+                                    <option> الرياض</option>
+                                    <option>جدة </option>
+                                    <option> المدينة </option>
+                                  </select>
+                                </div>
+                                <label class="form-label">العنوان بالتفصيل</label>
+                                <div class="address-input">
+                                  <input type="text" id="address" placeholder="اكتب العنوان هنا" />
+                                </div>
+                                <div id="map"></div>
+                              </div>
+
+                              <div class="col-sm-6">
+                                <label class="form-label">الصورة الأساسية للوحدة</label>
+                                <div id="upload-master-image">
+                                  <div class="for-DragDrop"></div>
+                                  <div class="for-ProgressBar"></div>
+                                  <div class="uploaded-files mt-3">
+                                    <h5>الصور المحملة:</h5>
+                                    <ol></ol>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <label class="form-label">الصور الفرعية للوحدة</label>
+                              <div class="col-sm-4">
+                                <div id="upload-branch-image1">
+                                  <div class="for-DragDrop"></div>
+                                  <div class="for-ProgressBar"></div>
+                                  <div class="uploaded-files mt-3">
+                                    <h5>الصور المحملة:</h5>
+                                    <ol></ol>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-4">
+                                <div id="upload-branch-image2">
+                                  <div class="for-DragDrop"></div>
+                                  <div class="for-ProgressBar"></div>
+                                  <div class="uploaded-files mt-3">
+                                    <h5>الصور المحملة:</h5>
+                                    <ol></ol>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-4">
+                                <div id="upload-branch-image3">
+                                  <div class="for-DragDrop"></div>
+                                  <div class="for-ProgressBar"></div>
+                                  <div class="uploaded-files mt-3">
+                                    <h5>الصور المحملة:</h5>
+                                    <ol></ol>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                         <div class="row mt-4">
                           <div class="col">
@@ -540,7 +606,119 @@
     });
   </script>
 
+<!-- Start map Script -->
+<script>
+  let map;
+  let geocoder;
+  let marker;
+
+  function initMap() {
+    const defaultLocation = { lat: 24.7136, lng: 46.6753 }; // الرياض
+
+    map = new google.maps.Map(document.getElementById("map"), {
+      center: defaultLocation,
+      zoom: 13,
+    });
+
+    marker = new google.maps.Marker({
+      map: map,
+      position: defaultLocation,
+    });
+
+    geocoder = new google.maps.Geocoder();
+
+    document.getElementById("address").addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    const address = document.getElementById("address").value;
+    geocodeAddress(address);
+  }
+});
+
+  }
+
+  function geocodeAddress(address) {
+    geocoder.geocode({ address: address }, (results, status) => {
+      if (status === "OK") {
+        const location = results[0].geometry.location;
+        map.setCenter(location);
+        marker.setPosition(location);
+        map.setZoom(15);
+      } else {
+        alert("العنوان غير صحيح أو لم يتم العثور عليه.");
+      }
+    });
+  }
+</script>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJ4shhmSia3lS_qlIeueaCeYBg7-LUiF4&callback=initMap">
+</script>
+<!-- End map Script -->
+  
+  <script src="assets/js/plugins/uppy.min.js"></script>
+
+  <script type="module">
+    // Function for displaying uploaded files
+    const onUploadSuccess = (elForUploadedFiles) => (file, response) => {
+      const url = response.uploadURL;
+      const fileName = file.name;
+
+      const li = document.createElement('li');
+      const a = document.createElement('a');
+      a.href = url;
+      a.target = '_blank';
+      a.appendChild(document.createTextNode(fileName));
+      li.appendChild(a);
+
+      document.querySelector(elForUploadedFiles).appendChild(li);
+    };
+
+    import { Uppy, Dashboard, Webcam, Tus, DragDrop, ProgressBar } from 'https://releases.transloadit.com/uppy/v3.23.0/uppy.min.mjs';
+
+    // for structure master image
+    const uppy1 = new Uppy({ debug: true, autoProceed: true })
+      .use(DragDrop, { target: '#upload-master-image .for-DragDrop' })
+      .use(Tus, { endpoint: 'https://tusd.tusdemo.net/files/' })
+      .use(ProgressBar, { target: '#upload-master-image .for-ProgressBar', hideAfterFinish: false })
+      .on('upload-success', onUploadSuccess('#upload-master-image .uploaded-files ol'));
+
+    uppy1.on('success', (fileCount) => {
+      console.log(`${fileCount} files uploaded`);
+    });
+    // for structure branch image1
+    const uppy2 = new Uppy({ debug: true, autoProceed: true })
+      .use(DragDrop, { target: '#upload-branch-image1 .for-DragDrop' })
+      .use(Tus, { endpoint: 'https://tusd.tusdemo.net/files/' })
+      .use(ProgressBar, { target: '#upload-branch-image1 .for-ProgressBar', hideAfterFinish: false })
+      .on('upload-success', onUploadSuccess('#upload-branch-image1 .uploaded-files ol'));
+
+    uppy2.on('success', (fileCount) => {
+      console.log(`${fileCount} files uploaded`);
+    });
+       // for structure branch image2
+       const uppy3 = new Uppy({ debug: true, autoProceed: true })
+      .use(DragDrop, { target: '#upload-branch-image2 .for-DragDrop' })
+      .use(Tus, { endpoint: 'https://tusd.tusdemo.net/files/' })
+      .use(ProgressBar, { target: '#upload-branch-image2 .for-ProgressBar', hideAfterFinish: false })
+      .on('upload-success', onUploadSuccess('#upload-branch-image2 .uploaded-files ol'));
+
+    uppy3.on('success', (fileCount) => {
+      console.log(`${fileCount} files uploaded`);
+    });
+       // for structure branch image3
+       const uppy4 = new Uppy({ debug: true, autoProceed: true })
+      .use(DragDrop, { target: '#upload-branch-image3 .for-DragDrop' })
+      .use(Tus, { endpoint: 'https://tusd.tusdemo.net/files/' })
+      .use(ProgressBar, { target: '#upload-branch-image3 .for-ProgressBar', hideAfterFinish: false })
+      .on('upload-success', onUploadSuccess('#upload-branch-image3 .uploaded-files ol'));
+
+    uppy4.on('success', (fileCount) => {
+      console.log(`${fileCount} files uploaded`);
+    });
+  </script>
+
   <!-- [Page Specific JS] end -->
+
 </body>
 <!-- [Body] end -->
 
