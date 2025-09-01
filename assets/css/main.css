@@ -455,6 +455,34 @@
 .page-header-title h2{
     font-size: 20px;
 }
+.page-header-title h1{
+    font-size: 25px;
+}
+.page-header-title p{
+    font-size: 19px;
+    line-height: 1.9;
+    color: #777;
+}
+.choose-type-box{
+    width: 100%;
+    height: 230px;
+    border: 1px solid #eee;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px #eee;
+    padding: 35px 0;
+    margin-top: 50px;
+}
+.choose-type-box .data h4{
+    font-size: 20px;
+    padding-top: 15px;
+}
+.choose-type-box .data p{
+    font-size: 15px;
+    line-height: 2.2;
+    color: #777;
+    font-weight: 500;
+}
 /* visits-page */
 .visit-cards .sector-icon{
     width: 40px;
@@ -694,6 +722,38 @@
     padding-right: 10px;
     padding-left: 0;
 }
+#addressForm p{
+    font-size: 13px;
+    padding-top: 15px;
+    color: #6a6a6a;
+}
+.tab-pane .maximum{
+    font-size: 15px;
+    font-weight: 600;
+    color: #5d5c5c;
+    line-height: 57px;
+    margin-bottom: 15px;
+}
+.address-input-group .checkbox{
+    width: 15px;
+    height: 23px;
+    line-height: 15px;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+.checkbox-label{
+    font-size: 16px;
+    color: #565656;
+    font-family: var(--font-1);
+}
+.radio-buttons-group-box{
+    display: block;
+    font-size: 15px;
+    color: #555;
+}
+.radio-buttons-group-box input{
+    margin: 0 10px;
+}
 /* ================================== ltr-direction ======================================== */
 [data-pc-direction=ltr] .Contracts-cards .add-contracts{
     margin-left: 100px;
@@ -791,6 +851,7 @@
 @media (max-width: 1024px) and (min-width: 769px) {
 }
 @media (max-width: 768px) and (min-width: 426px) {
+    
 }
 @media (max-width: 425px) and (min-width:321px) {
     .mobile-contract-card{
