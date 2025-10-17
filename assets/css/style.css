@@ -5700,7 +5700,12 @@ textarea.is-invalid.dataTable-input {
   overflow-y: auto;
   outline: 0;
 }
-
+.fade {
+  transition: opacity 0.15s linear;
+}
+.fade:not(.show) {
+  opacity: 0;
+}
 .modal-dialog {
   position: relative;
   width: auto;
@@ -5718,7 +5723,24 @@ textarea.is-invalid.dataTable-input {
 }
 .modal.show .modal-dialog {
   transform: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: auto;
+  margin: 0;
+  height: auto;
 }
+.modal.show .avatar.sm {
+  width: 26px;
+  min-width: 26px;
+  height: 26px;
+}
+.modal.show .avatar {
+  width: 36px;
+  min-width: 36px;
+  height: 36px;
+}
+
 .modal.modal-static .modal-dialog {
   transform: scale(1.02);
 }
@@ -5726,10 +5748,10 @@ textarea.is-invalid.dataTable-input {
 .modal-dialog-scrollable {
   height: calc(100% - var(--bs-modal-margin) * 2);
 }
-.modal-dialog-scrollable .modal-content, .modal-dialog-scrollable .introjs-tooltip {
+/* .modal-dialog-scrollable .modal-content, .modal-dialog-scrollable .introjs-tooltip {
   max-height: 100%;
   overflow: hidden;
-}
+} */
 .modal-dialog-scrollable .modal-body {
   overflow-y: auto;
 }
@@ -5786,7 +5808,32 @@ textarea.is-invalid.dataTable-input {
   padding: calc(var(--bs-modal-header-padding-y) * 0.5) calc(var(--bs-modal-header-padding-x) * 0.5);
   margin: calc(-0.5 * var(--bs-modal-header-padding-y)) calc(-0.5 * var(--bs-modal-header-padding-x)) calc(-0.5 * var(--bs-modal-header-padding-y)) auto;
 }
-
+.modal-content .card-header {
+  display: flex;
+  justify-content: space-between;
+}
+.modal-content .card-header .morphing a{
+  color: #62ba87 !important;
+}
+.modal-content .card-header .morphing .dropdown-menu a{
+  font-size: 12px;
+  color:#5a5a5a !important;
+}
+.modal-content .card-header .morphing .dropdown-toggle::after{
+  display: none;
+}
+.modal-content .chat-history .card{
+  margin-bottom: 0;
+}
+.modal-content .chat-history .btn-group .dropdown-menu{
+  width: 120px !important;
+  font-size: 12px;
+  min-width: 100px;
+}
+.modal-content .tab-content .custom_scroll{
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
 .modal-title {
   margin-bottom: 0;
   line-height: var(--bs-modal-title-line-height);
