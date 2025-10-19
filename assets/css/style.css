@@ -5735,10 +5735,31 @@ textarea.is-invalid.dataTable-input {
     border: 1px solid #eee;
     border-radius: 10px;
 }
+.messages-box .nav-pills .nav-link.active,.messages-box .nav-pills .show > .nav-link{
+  background-color: #62ba87;
+  font-size: 15px;
+}
+.messages-box .nav-pills .nav-link{
+  display: flex;
+  width: 200px;
+}
+.messages-box .nav-pills .nav-link h6{
+  font-size: 12px;
+    color: #2c2c2c;
+    padding-top: 5px;
+    font-weight: 500;
+}
+.messages-box .nav-pills .nav-link.active h6{
+  color: #fff;
+  font-weight: 600;
+}
+.messages-box .nav-pills .nav-link.active small{
+color: #fbfbfb !important;
+}
 .messages-box .avatar.sm {
-  width: 26px;
-  min-width: 26px;
-  height: 26px;
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
 }
 .messages-box .avatar {
   width: 36px;
@@ -5749,6 +5770,19 @@ textarea.is-invalid.dataTable-input {
   position: sticky;
   bottom: 0;
   background-color: #fff !important;
+}
+.messages-box .card-footer input{
+  border-left: none;
+}
+.messages-box .card-footer .paperclip,
+.messages-box .card-footer .microphone{
+  background: none;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 0 8px 0 11px;
+  font-size: 20px;
+  color: #323131;
 }
 .modal.modal-static .modal-dialog {
   transform: scale(1.02);
