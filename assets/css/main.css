@@ -755,6 +755,72 @@
 .radio-buttons-group-box input{
     margin: 0 10px;
 }
+.packages-box{
+    padding: 40px 0;
+}
+.packages-box h1{
+    font-size: 22px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-family: var(--font-1);
+    font-weight: 500;
+    color: #2f3540;
+    line-height: 41px;
+    margin-bottom: 30px;
+}
+.packages-box .price-card{
+    margin-top: 50px;
+}
+.packages-box .price-card .product-list li{
+    padding: 4px 25px 4px 25px;
+}
+.packages-box .price-card .product-list li .ph-duotone{
+    right: 0;
+}
+.price-card .price-head {
+    padding-bottom: 8px;
+    margin-bottom: 40px;
+}
+.packages-box .price-card .product-list{
+    margin-bottom: 40px;
+}
+.packages-box .price-card.first .price-head i,
+.packages-box  .price-card.first .price-head h5,
+.packages-box .price-card.first .product-list li .ph-duotone{
+   color: #cd7f32
+}
+.packages-box  .price-card.first .price-head{
+background: #fff8f0;
+}
+.packages-box  .price-card.first button{
+    background: #cd7f32;
+}
+.packages-box .price-card.second .price-head i,
+.packages-box  .price-card.second .price-head h5,
+.packages-box .price-card.second .product-list li .ph-duotone{
+   color: #c0c0c0
+}
+.packages-box  .price-card.second .price-head{
+    background: #f4f4f4;
+}
+.packages-box  .price-card.second button{
+    background: #c0c0c0;
+}
+.packages-box .price-card.third .price-head i,
+.packages-box  .price-card.third .price-head h5,
+.packages-box .price-card.third .product-list li .ph-duotone{
+   color: #ffd700
+}
+.packages-box  .price-card.third .price-head{
+    background: #fff9d6;
+}
+.packages-box  .price-card.third button{
+    background: #ffd700;
+}
+.packages-box  .price-card button{
+    border: none;
+}
 /* ================================== ltr-direction ======================================== */
 [data-pc-direction=ltr] .Contracts-cards .add-contracts{
     margin-left: 100px;
@@ -845,6 +911,7 @@
     margin-right: 10px;
     margin-left: 0;
 }
+
 
 /* =============================== responsive =================== */
 
